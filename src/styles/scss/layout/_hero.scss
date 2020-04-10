@@ -40,7 +40,9 @@
       display: flex;
       align-items: center;
 
-      width: 265px;
+      @include first(3) {
+        width: 265px;
+      }
 
       @include last(2) {
         margin-top: 20px;
@@ -51,5 +53,8 @@
       margin-left: 15px;
     }
   }
-}
 
+  .button-group {
+    margin-top: 35px;
+  }
+}
