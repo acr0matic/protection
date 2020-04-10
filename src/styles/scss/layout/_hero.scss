@@ -1,0 +1,55 @@
+#hero {
+  display: flex;
+  align-items: center;
+
+  background-image: url("../img/backgrounds/hero-background.jpg");
+  height: 775px;
+
+  .wrapper {
+    max-width: 610px;
+
+    &-text {
+      position: relative;
+    }
+  }
+
+  .title {
+    margin-bottom: 20px;
+  }
+
+  .subtitle {
+    margin-bottom: 40px;
+  }
+
+  .virus-text {
+    position: absolute;
+    top: -10px;
+    left: -200px;
+
+    pointer-events: none;
+  }
+
+  .advantage {
+    &-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    &-block {
+      display: flex;
+      align-items: center;
+
+      width: 265px;
+
+      @include last(2) {
+        margin-top: 20px;
+      }
+    }
+
+    &-text {
+      margin-left: 15px;
+    }
+  }
+}
+

@@ -1,3 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="21" viewBox="0 0 21 21">
-  <image id="phone" data-name="phone" width="21" height="21" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAB2UlEQVQ4jbWVPWtUYRCFn+jGxs9IGg1aGNRCC0NWjAbZRsEqoL2CYm+CYBvSWfkn1CAKm0YQ1EYklRGtlEUUxUIF41clRHjkXSbx7n3vbgLqwNm9vHPm7N6ZM/f2qXSJQ8BZYBzYBQwCn4H3wDxwHXheVbouO4E9QBOYA34Al4HDwOb4vgIsRb4Z/M5I/7SAU+pHdUrtL+XK6A/eh6hbyReJE0EYqRDohZGomyiL7lUX1bEexb0wFvX7iqL34lZ6Fa6GqdBpi46q7yp6OKs+U1+qF1YRTKiFzmiy1DXgOzBTmmEL2A8MAA+AejblPKaBLclSx4CHWRoWgSHgK7AJ6MsYedwHGrUw9pssDXeAM8BPYCG5L2Pk0Wr7Vv2lbqjo0cbo6YHo6+44X1/BLaL98UXdUZFMOKfeUhvqi7huqU/VixX87UkvXTxRxysIy5hRb6sH1fNxtjXEy9yj6kIa1GPgRNadP5Emehe4GQMbCrcsZUw4CTxK6vXwV63il8s9nlTn1VfqjS4+rf/LjZosbhSxs3+z+0di4B27/1+eUss4rX6KW1nL8/RS8FPdSq6KPKw21bfqdNhkIEy/Uz2uXo184iV+h8Za3lENYBjYBnwDXrdt0+0dBfwGv8fQneg14E4AAAAASUVORK5CYII="/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" id="Фигура_10_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 21 21" enable-background="new 0 0 21 21" xml:space="preserve">
+<g id="Фигура_10">
+	<g>
+		<path fill="#FFFFFF" d="M10.5,0C4.7,0,0,4.7,0,10.5S4.7,21,10.5,21S21,16.3,21,10.5S16.3,0,10.5,0z M10.5,20C5.2,20,1,15.8,1,10.5
+			C1,5.2,5.2,1,10.5,1c5.3,0,9.5,4.3,9.5,9.5C20,15.8,15.8,20,10.5,20z M13.9,11.3c-0.4,0-0.7-0.1-1.1-0.3c-0.4-0.2-1-0.1-1.3,0.3
+			l-0.3,0.3c-0.8-0.5-1.4-1.1-1.9-1.9l0.3-0.3C10,9.1,10.1,8.6,10,8.1C9.8,7.8,9.7,7.4,9.7,7.1C9.6,6.5,9.1,6,8.5,6H7.2
+			C6.9,6,6.6,6.1,6.3,6.4C6.1,6.7,6,7,6,7.3c0.1,1.3,0.6,2.6,1.3,3.7C8,12.1,8.9,13,9.9,13.7c1.1,0.7,2.4,1.2,3.7,1.3
+			c0,0,0.1,0,0.1,0c0.3,0,0.6-0.1,0.8-0.3c0.3-0.2,0.4-0.6,0.4-0.9v-1.2C15,11.9,14.6,11.4,13.9,11.3z M14.2,13.8
+			c0,0.1,0,0.2-0.1,0.3c-0.1,0.1-0.2,0.1-0.3,0.1l0,0c-1.2-0.1-2.4-0.5-3.4-1.2c-0.9-0.6-1.7-1.4-2.3-2.3C7.4,9.6,7,8.5,6.8,7.3
+			c0-0.1,0-0.2,0.1-0.3C7,6.9,7.1,6.8,7.2,6.8h1.2c0.2,0,0.4,0.2,0.4,0.4C8.9,7.6,9,8,9.2,8.4c0.1,0.2,0,0.3-0.1,0.4L8.6,9.4
+			C8.4,9.5,8.4,9.7,8.5,9.9c0.6,1.1,1.5,2,2.6,2.6c0.2,0.1,0.4,0.1,0.5-0.1l0.5-0.5c0.1-0.1,0.3-0.2,0.4-0.1
+			c0.4,0.1,0.8,0.3,1.2,0.3c0.2,0,0.4,0.2,0.4,0.4V13.8z"/>
+	</g>
+</g>
 </svg>

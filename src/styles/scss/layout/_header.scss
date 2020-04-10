@@ -25,6 +25,16 @@ header {
     margin-right: 10px;
   }
 
+  .icon-callback {
+    width: 27px;
+    height: 27px;
+  }
+
+  .icon-cart {
+    width: 27px;
+    height: 27px;
+  }
+
   .cart-cost {
     &::before {
       content: "/";

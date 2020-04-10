@@ -6,14 +6,13 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-a,
-header {
+a {
   color: #ffffff;
 }
 
-
 header {
   font-size: $font-size-4;
+  color: $font-color-primary;
 
   .phone {
     font-size: $font-size-3;
@@ -21,5 +20,22 @@ header {
 
   .cart-cost {
     color: $font-color-secondary;
+  }
+}
+
+#hero {
+  color: $font-color-primary;
+
+  .title {
+    font-size: $font-size-1;
+  }
+
+  .subtitle {
+    font-size: $font-size-3;
+    font-weight: 500;
+  }
+
+  .advantage-text {
+    font-weight: 500;
   }
 }
