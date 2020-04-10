@@ -1,3 +1,25 @@
 // -----------------------------------------------------------------------------
 // В этом файле стили типографии для всех элементов страницы
 // -----------------------------------------------------------------------------
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+a,
+header {
+  color: #ffffff;
+}
+
+
+header {
+  font-size: $font-size-4;
+
+  .phone {
+    font-size: $font-size-3;
+  }
+
+  .cart-cost {
+    color: $font-color-secondary;
+  }
+}
