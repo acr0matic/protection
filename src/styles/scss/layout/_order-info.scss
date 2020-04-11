@@ -7,11 +7,24 @@
 
   background-image: url("../img/backgrounds/order-info-background.jpg");
 
+
+  .container {
+    position: relative;
+  }
+
   .step {
     &-wrapper {
       display: flex;
       flex-wrap: wrap;
       margin-top: 150px;
+    }
+
+    &-line {
+      position: absolute;
+      top: 165px;
+      left: 130px;
+
+      pointer-events: none;
     }
 
     &-block {
