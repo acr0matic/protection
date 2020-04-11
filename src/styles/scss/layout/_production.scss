@@ -1,0 +1,137 @@
+#production {
+  position: relative;
+
+  .cloud {
+    position: absolute;
+
+    &-top {
+      top: -200px;
+    }
+
+    &-bottom {
+      bottom: -200px;
+    }
+  }
+
+  .container {
+    position: relative;
+    z-index: $second-layer;
+    padding-top: 145px;
+  }
+
+  .production {
+    &-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+
+      margin-top: 50px;
+    }
+
+    &-card {
+      flex: 0 0 25%;
+      
+      width: 100%;
+      max-width: 245px;
+
+      @include last(4) {
+        margin-top: 60px;
+      }
+
+      &:not(:nth-child(4n + 1)) {
+        margin-left: calc((100% - (23.6% * 4))); /*  added  */
+      }
+    }
+
+    &-preview {
+      width: 100%;
+    }
+
+    &-cost {
+      margin-top: 25px;
+    }
+
+    &-title {
+      margin-top: 25px;
+      max-height: 50px;
+    }
+
+    &-order {
+      display: flex;
+      align-items: center;
+
+      margin-top: 25px;
+    }
+
+    &-order-wrapper {
+      display: flex;
+      align-items: center;
+
+      cursor: pointer;
+
+      &:hover {
+        path {
+          fill: #20aeff;
+        }
+        .production-order-text-added {
+          color: $font-color-order;
+        }
+      }
+    }
+
+    &-order-text {
+      margin-left: 10px;
+      transition: all 0.2s ease;
+    }
+
+    &-order-icon {
+      path {
+        transition: all 0.2s ease;
+      }
+
+      &-active {
+        path {
+          fill: #6ebb1b;
+        }
+      }
+    }
+
+    &-count {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+    }
+
+    &-count-wrapper {
+      display: block;
+
+      cursor: pointer;
+
+      &:hover path {
+        fill: #dcdcdc;
+      }
+    }
+
+    &-count-icon {
+      vertical-align: middle;
+      margin-bottom: 2px;
+
+      path {
+        transition: all 0.1s ease;
+      }
+
+      &-disabled {
+        path {
+          fill: #dcdcdc;
+        }
+      }
+    }
+
+    &-count-minus {
+      margin-right: 15px;
+    }
+
+    &-count-plus {
+      margin-left: 15px;
+    }
+  }
+}

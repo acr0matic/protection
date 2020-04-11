@@ -5,11 +5,13 @@
   position: relative;
 
   background-image: url("../img/backgrounds/hero-background.jpg");
-  min-height: 775px;
+  min-height: 850px;
+
+  overflow: hidden;
 
   .woman-wrapper {
     position: absolute;
-    bottom: 0;
+    bottom: -70px;
     left: 50%;
 
     width: 1260px;
@@ -18,7 +20,7 @@
   .woman-img {
     display: block;
     width: 100%;
-    max-width: 735px;
+    max-width: 850px;
   }
 
   .wrapper {
