@@ -2,11 +2,27 @@
   display: flex;
   align-items: center;
 
+  position: relative;
+
   background-image: url("../img/backgrounds/hero-background.jpg");
-  height: 775px;
+  min-height: 775px;
+
+  .woman-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    width: 1260px;
+  }
+
+  .woman-img {
+    display: block;
+    width: 100%;
+    max-width: 735px;
+  }
 
   .wrapper {
-    max-width: 610px;
+    width: 610px;
 
     &-text {
       position: relative;
