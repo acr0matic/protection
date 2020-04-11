@@ -1,8 +1,10 @@
 #production {
   position: relative;
 
+
   .cloud {
     position: absolute;
+    width: 100%;
 
     &-top {
       top: -200px;
@@ -29,7 +31,7 @@
 
     &-card {
       flex: 0 0 25%;
-      
+
       width: 100%;
       max-width: 245px;
 

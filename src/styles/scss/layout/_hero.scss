@@ -12,7 +12,7 @@
   .woman-wrapper {
     position: absolute;
     bottom: -70px;
-    left: 50%;
+    left: 45%;
 
     width: 1260px;
   }
@@ -20,11 +20,12 @@
   .woman-img {
     display: block;
     width: 100%;
-    max-width: 850px;
+    max-width: 900px;
   }
 
   .wrapper {
     width: 610px;
+    margin-bottom: 90px;
 
     &-text {
       position: relative;
