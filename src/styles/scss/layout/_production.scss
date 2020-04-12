@@ -10,14 +10,14 @@
     }
 
     &-bottom {
-      bottom: -300px;
+      bottom: -200px;
     }
   }
 
   .container {
     position: relative;
     z-index: $second-layer;
-    padding-top: 145px;
+    padding: 145px 0;
   }
 
   .production {
