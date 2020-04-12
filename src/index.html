@@ -126,7 +126,7 @@
       <div class="container">
         <h2 class="title">Индивидуальная защита высокого качества!</h2>
         <div class="production-wrapper">
-          <div class="production-card">
+          <div id="test" class="production-card">
             <img class="production-preview" src="img/production/mask.jpg" alt="">
             <span class="production-cost">3 290р</span>
             <h3 class="production-title">4х слойная серая маска</h3>
@@ -339,8 +339,26 @@
     <!-- /.container -->
   </footer>
 
+  <!-- Модальные окна -->
+  <div class="micromodal-slide" id="modal-accept" aria-hidden="true">
+    <div class="modal-center modal-overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal-container modal-container-small" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+        <button class="modal-close" aria-label="Close modal" data-micromodal-close></button>
+        <div class="modal-accept-wrapper">
+          <img class="modal-accept-icon" src="img/icons/accept-icon.svg" alt="">
+          <p class="modal-accept-text">Ваша заявка отправлена, <span class="modal-text-important">спасибо!</span><br> В ближайшее время, мы Вам перезвоним</p>
+        </div>
+        <!-- /.accept-modal-wrapper -->
+      </div>
+      <!-- /.modal__container -->
+    </div>
+    <!-- /.modal__overlay -->
+  </div>
+  <!-- /.micromodal-slide -->
+
   <!-- Скрипты -->
   <!-- build:js -->
+  <script src="scripts/libraries/micromodal.js"></script>
   <script src="scripts/script.js "></script>
   <!-- endbuild -->
 

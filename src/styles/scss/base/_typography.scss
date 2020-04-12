@@ -100,3 +100,13 @@ header {
 footer {
   color: #5a5a5a;
 }
+
+.modal {
+  &-accept-text {
+    line-height: 26px;
+  }
+
+  &-text-important {
+    color: $font-color-order;
+  }
+}
