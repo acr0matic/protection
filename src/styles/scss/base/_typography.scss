@@ -109,6 +109,10 @@ footer {
   &-text-important {
     color: $font-color-order;
   }
+
+  &-callback {
+    color: $font-color-primary-inverse;
+  }
 }
 
 .product {
@@ -131,4 +135,12 @@ footer {
   &-description {
     line-height: 30px;
   }
+}
+
+.input-text::placeholder {
+  color: $font-color-secondary;
+}
+
+.button-form {
+  color: $font-color-secondary;
 }

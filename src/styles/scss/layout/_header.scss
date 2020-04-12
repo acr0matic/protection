@@ -18,6 +18,14 @@ header {
     height: 100%;
   }
 
+  .callback {
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    cursor: pointer;
+  }
+
   .phone {
     margin-right: 35px;
   }

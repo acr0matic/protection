@@ -57,10 +57,30 @@
   <!-- Шапка -->
   <header>
     <div class="container">
-      <div class="callback align-center-horizontal">
+      <div class="align-center-horizontal">
         <a class="phone" href="tel:89653171030">8 965 317 10 30</a>
-        <img src="img/icons/phone.svg" alt="" class="icon-header icon-callback">
-        <span class="callback-text">Обратный звонок</span>
+        <div id="callback-button" class="callback">
+          <img src="img/icons/phone.svg" alt="" class="icon-header icon-callback">
+          <span class="callback-text">Обратный звонок</span>
+        </div>
+        <!-- /.callback -->
+
+        <div class="modal micromodal-slide" id="modal-callback" aria-hidden="true">
+          <div class="modal-callback" tabindex="-1" data-micromodal-close>
+            <div class="modal-container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+              <button class="modal-close" aria-label="Close modal" data-micromodal-close></button>
+              <h3>Перезвоните мне</h3>
+              <form id="form-callback" action="">
+                <input type="text" class="input input-text" placeholder="Имя">
+                <input type="text" class="input input-text" placeholder="Телефон">
+                <button type="button" class="button button-form">Заказать</button>
+              </form>
+            </div>
+            <!-- /.modal__container -->
+          </div>
+          <!-- /.modal__overlay -->
+        </div>
+        <!-- /.micromodal-slide -->
       </div>
       <!-- /.callback -->
       <div class="cart align-center-horizontal">
@@ -340,7 +360,7 @@
   </footer>
 
   <!-- Модальные окна -->
-  <div class="micromodal-slide" id="modal-product-card" aria-hidden="true">
+  <div class="modal micromodal-slide" id="modal-product-card" aria-hidden="true">
     <div class="modal-center modal-overlay" tabindex="-1" data-micromodal-close>
       <div class="modal-container modal-container-full" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
         <button class="modal-close" aria-label="Close modal" data-micromodal-close></button>
@@ -480,7 +500,7 @@
   </div>
   <!-- /.micromodal-slide -->
 
-  <div class="micromodal-slide" id="modal-accept" aria-hidden="true">
+  <div class="modal micromodal-slide" id="modal-accept" aria-hidden="true">
     <div class="modal-center modal-overlay" tabindex="-1" data-micromodal-close>
       <div class="modal-container modal-container-small" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
         <button class="modal-close" aria-label="Close modal" data-micromodal-close></button>
@@ -496,6 +516,7 @@
     <!-- /.modal__overlay -->
   </div>
   <!-- /.micromodal-slide -->
+
 
   <!-- Скрипты -->
   <!-- build:js -->
