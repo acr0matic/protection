@@ -25,10 +25,13 @@
   'layout/hero',
   'layout/production',
   'layout/order-info',
+  'layout/product',
   'layout/footer';
 
 // 5. Подключение стилей компонентов
 @import
   'components/button',
+  'components/gallery',
+  'components/table',
   'components/modal';
 

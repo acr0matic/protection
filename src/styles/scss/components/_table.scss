@@ -1,0 +1,15 @@
+.product-feature-table {
+  width: 100%;
+  border-collapse: collapse;
+
+  .table-row,
+  .table-column {
+    padding: 15px;
+  }
+
+  .table-row {
+    @include even {
+      background-color: #f7f7f7;
+    }
+  }
+}

@@ -26,15 +26,25 @@
   &-container {
     background-color: #fff;
 
-    max-height: 100vh;
+    max-height: 95vh;
 
     padding: 30px 30px 50px 30px;
 
     border-radius: 10px;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 
   &-container-small {
     max-width: 500px;
+  }
+
+  &-container-full {
+    width: 100%;
+    max-width: $container-max-width;
   }
 
   &-accept-wrapper {
@@ -49,6 +59,7 @@
 
   &-close {
     display: block;
+
     margin-left: auto;
 
     background: transparent;
@@ -62,29 +73,20 @@
     content: "\2715";
     font-size: 18px;
   }
-}
 
-.modal__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  &-content-row {
+    display: flex;
+    justify-content: space-between;
 
-.modal__title {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-weight: 600;
-  font-size: 1.25rem;
-  line-height: 1.25;
-  color: #00449e;
-  box-sizing: border-box;
-}
+    @include last(1) {
+      margin-top: 65px;
+    }
+  }
 
-.modal__content {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  line-height: 1.5;
-  color: rgba(0, 0, 0, 0.8);
+  &-content-column {
+    width: 100%;
+    max-width: 500px;
+  }
 }
 
 @keyframes mmfadeIn {

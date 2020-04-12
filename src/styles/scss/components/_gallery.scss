@@ -1,0 +1,28 @@
+.gallery {
+  &-image {
+    border: 1px solid #f5f5f5;
+
+    cursor: pointer;
+
+    &-active {
+      opacity: 0.5;
+      cursor: default;
+    }
+  }
+
+  &-main-image {
+    width: 100%;
+  }
+
+  &-other {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 20px;
+  }
+
+  &-other-image {
+    width: 100%;
+    max-width: 80px;
+  }
+}

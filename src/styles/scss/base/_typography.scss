@@ -110,3 +110,25 @@ footer {
     color: $font-color-order;
   }
 }
+
+.product {
+  &-title {
+    font-size: $font-size-3;
+    font-weight: 500;
+    line-height: 30px;
+  }
+
+  &-price {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  &-order-text {
+    font: $font-size-4;
+    font-weight: 500;
+  }
+
+  &-description {
+    line-height: 30px;
+  }
+}
