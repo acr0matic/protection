@@ -102,16 +102,20 @@ footer {
 }
 
 .modal {
+  &-container {
+    color: $font-color-primary-inverse;
+  }
+
   &-accept-text {
+    line-height: 26px;
+  }
+
+  &-cart-text {
     line-height: 26px;
   }
 
   &-text-important {
     color: $font-color-order;
-  }
-
-  &-callback {
-    color: $font-color-primary-inverse;
   }
 }
 

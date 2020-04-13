@@ -67,7 +67,7 @@
 
         <div class="modal micromodal-slide" id="modal-callback" aria-hidden="true">
           <div class="modal-callback" tabindex="-1" data-micromodal-close>
-            <div class="modal-container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+            <div class="modal-container modal-container-no-button" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
               <button class="modal-close" aria-label="Close modal" data-micromodal-close></button>
               <h3>Перезвоните мне</h3>
               <form id="form-callback" action="">
@@ -83,10 +83,21 @@
         <!-- /.micromodal-slide -->
       </div>
       <!-- /.callback -->
-      <div class="cart align-center-horizontal">
+      <div id="cart-header" class="cart align-center-horizontal">
         <img src="img/icons/cart.svg" alt="" class="icon-header icon-cart">
         <span class="cart-count">0</span>
         <span class="cart-cost">0р</span>
+
+        <div class="modal micromodal-slide" id="modal-cart-empty" aria-hidden="true">
+          <div class="modal-cart modal-cart-empty" tabindex="-1" data-micromodal-close>
+            <div class="modal-container modal-container-no-button" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+              <p class="modal-cart-text">Ваша корзина пуста :(</p>
+            </div>
+            <!-- /.modal__container -->
+          </div>
+          <!-- /.modal__overlay -->
+        </div>
+        <!-- /.micromodal-slide -->
       </div>
       <!-- /.cart -->
     </div>

@@ -29,6 +29,20 @@
     outline: none;
   }
 
+  &-cart {
+    position: absolute;
+    z-index: $overlay-layer;
+    top: 45px;
+    right: 0;
+
+    width: 280px;
+    text-align: center;
+  }
+
+  &-cart-empty {
+
+  }
+
   &-overlay {
     background: rgba(0, 0, 0, 0.8);
   }
@@ -46,6 +60,10 @@
     &::-webkit-scrollbar {
       display: none;
     }
+  }
+
+  &-container-no-button {
+    padding: 30px 30px 30px 30px;
   }
 
   &-container-small {
