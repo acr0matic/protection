@@ -7,11 +7,10 @@ callbackButton.addEventListener("click", () => {
 });
 
 headerCart.addEventListener("mouseenter", () => {
-  MicroModal.show("modal-cart-empty");
-})
+  MicroModal.show("modal-cart");
+});
 
 headerCart.addEventListener("mouseleave", () => {
-  MicroModal.close("modal-cart-empty");
-})
-
+  MicroModal.close("modal-cart");
+});
 
