@@ -10,3 +10,28 @@
     margin-top: 20px;
   }
 }
+
+#modal-order-form {
+  display: flex;
+  flex-direction: column;
+
+  .input {
+    width: 100%;
+  }
+
+  .input-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .input-placeholder {
+    display: block;
+    width: 140px;
+  }
+
+  .button {
+    margin-left: 120px;
+  }
+}

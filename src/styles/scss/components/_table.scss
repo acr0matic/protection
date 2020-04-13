@@ -13,3 +13,19 @@
     }
   }
 }
+
+.table-cart-total {
+  .table-row {
+    text-align: right;
+    padding: 15px;
+  }
+
+  .table-row,
+  .table-column {
+    padding: 10px;
+  }
+
+  .table-column-padding {
+    padding-left: 50px;
+  }
+}

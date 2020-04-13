@@ -14,3 +14,5 @@ headerCart.addEventListener("mouseleave", () => {
   MicroModal.close("modal-cart");
 });
 
+MicroModal.show("modal-cart-full");
+
