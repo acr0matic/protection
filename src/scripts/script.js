@@ -25,18 +25,18 @@ callbackButton.addEventListener("click", () => {
   MicroModal.show("modal-callback");
 });
 
-headerCart.addEventListener("mouseenter", () => {
+headerCart.addEventListener("click", () => {
   MicroModal.show("modal-cart");
 });
 
-headerCart.addEventListener("mouseleave", () => {
-  MicroModal.close("modal-cart");
-});
-
 checkoutButton.addEventListener("click", () => {
+  MicroModal.close("modal-cart");
   MicroModal.show("modal-cart-full");
 });
 
 closeCart.addEventListener("click", () => {
   MicroModal.close("modal-cart-full");
 });
+
+
+MicroModal.show("modal-product-card");

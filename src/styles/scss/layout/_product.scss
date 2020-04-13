@@ -12,8 +12,22 @@
     margin-bottom: 25px;
   }
 
+  &-gallery {
+    @include breakpoint($phone-l) {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &-feature-table {
+    @include breakpoint($phone-l) {
+      margin-bottom: 40px;
+    }
+  }
+
   &-action {
     display: flex;
+
     align-items: center;
   }
 
@@ -45,6 +59,11 @@
       @include last(1) {
         margin-top: 15px;
       }
+    }
+
+    @include breakpoint($phone-l) {
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 

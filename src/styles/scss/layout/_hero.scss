@@ -9,23 +9,44 @@
 
   overflow: hidden;
 
+  @include breakpoint($phone-l) {
+    align-items: flex-start;
+    min-height: 1200px;
+  }
+
+
   .woman-wrapper {
     position: absolute;
     bottom: -70px;
     left: 45%;
 
     width: 1260px;
+
+    @include breakpoint($phone-l) {
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-15%);
+    }
   }
 
   .woman-img {
     display: block;
     width: 100%;
     max-width: 900px;
+
+    @include breakpoint($phone-l) {
+      max-width: 400px;
+    }
   }
 
   .wrapper {
     width: 610px;
     margin-bottom: 90px;
+
+    @include breakpoint($phone-l) {
+      width: 100%;
+      margin-top: 130px;
+    }
 
     &-text {
       position: relative;
@@ -46,6 +67,12 @@
     left: -200px;
 
     pointer-events: none;
+
+    @include breakpoint($phone-l) {
+      top: -10px;
+      left: 0;
+      width: 100%;
+    }
   }
 
   .advantage {
@@ -66,6 +93,10 @@
       @include last(2) {
         margin-top: 20px;
       }
+
+      @include breakpoint($phone-l) {
+        margin-top: 20px;
+      }
     }
 
     &-text {
@@ -75,5 +106,9 @@
 
   .button-group {
     margin-top: 35px;
+
+    @include breakpoint($phone-l) {
+      text-align: center;
+    }
   }
 }

@@ -10,12 +10,22 @@ header {
   width: 100%;
   height: 60px;
 
+  @include breakpoint($phone-l) {
+    top: 15px;
+  }
+
   .container {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
 
+    position: relative;
+
     height: 100%;
+
+    @include breakpoint($phone-l) {
+      align-items: center;
+    }
   }
 
   .callback {
@@ -24,6 +34,21 @@ header {
 
     position: relative;
     cursor: pointer;
+
+    @include breakpoint($phone-l) {
+      margin-top: 10px;
+    }
+
+    &-wrapper {
+      display: flex;
+      align-items: center;
+
+      position: relative;
+
+      @include breakpoint($phone-l) {
+        flex-wrap: wrap;
+      }
+    }
   }
 
   .phone {
@@ -40,8 +65,15 @@ header {
   }
 
   .cart {
-    position: relative;
+    position: absolute;
+    right: 0;
     padding: 10px 0;
+
+    cursor: pointer;
+
+    @include breakpoint($phone-l) {
+      position: relative;
+    }
   }
 
   .icon-cart {

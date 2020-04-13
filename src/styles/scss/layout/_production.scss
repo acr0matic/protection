@@ -7,10 +7,18 @@
 
     &-top {
       top: -200px;
+
+      @include breakpoint($phone-l) {
+        top: -50px;
+      }
     }
 
     &-bottom {
       bottom: -200px;
+
+      @include breakpoint($phone-l) {
+        bottom: -50px;
+      }
     }
   }
 
@@ -29,7 +37,9 @@
     }
 
     &-card {
+      display: flex;
       flex: 0 0 25%;
+      flex-direction: column;
 
       width: 100%;
       max-width: 245px;
@@ -41,6 +51,23 @@
       &:not(:nth-child(4n + 1)) {
         margin-left: calc((100% - (23.6% * 4))); /*  added  */
       }
+
+      @include breakpoint($phone-l) {
+        flex: 0 0 100%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 100px;
+
+        max-width: 300px;
+
+        @include between(5, 8) {
+          margin-top: 0;
+        }
+
+        &:not(:nth-child(4n + 1)) {
+          margin-left: auto;
+        }
+      }
     }
 
     &-preview {
@@ -51,6 +78,10 @@
       max-height: 245px;
 
       object-fit: cover;
+
+      @include breakpoint($phone-l) {
+        margin: 0 auto;
+      }
     }
 
     &-cost {

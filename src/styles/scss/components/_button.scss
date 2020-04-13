@@ -42,6 +42,10 @@
 
   &-form {
     border: 1px solid #dcdcdc;
+
+    @include breakpoint($phone-l) {
+      width: 100%;
+    }
   }
 
   &-shadow {

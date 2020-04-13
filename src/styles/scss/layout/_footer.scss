@@ -8,4 +8,8 @@ footer {
   bottom: 85px;
 
   width: 100%;
+
+  @include breakpoint($phone-l) {
+    bottom: 25px;
+  }
 }

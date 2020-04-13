@@ -24,3 +24,9 @@ $main-layer: 1;
 $second-layer: 2;
 $overlay-layer: 5;
 $higher-layer: 10005;
+
+// Брейкпоинты
+$phone-l: max-width 425px;
+$phone-m: max-width 375px;
+$phone-s: max-width 330px;
+

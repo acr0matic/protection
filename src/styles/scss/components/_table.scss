@@ -5,6 +5,10 @@
   .table-row,
   .table-column {
     padding: 15px;
+
+    @include breakpoint($phone-l) {
+      padding: 15px 5px;
+    }
   }
 
   .table-row {
@@ -27,5 +31,19 @@
 
   .table-column-padding {
     padding-left: 50px;
+  }
+
+  @include breakpoint($phone-l) {
+    .table-row {
+      text-align: left;
+    }
+
+    .table-cart-price-main {
+      width: 100px;
+    }
+
+    .table-column-padding {
+      padding-left: 0;
+    }
   }
 }
