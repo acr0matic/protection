@@ -86,10 +86,16 @@
 
     &-cost {
       margin-top: 25px;
+
+      &::after {
+        content: "р";
+      }
     }
 
     &-title {
       margin-top: 25px;
+
+      height: 40px;
       max-height: 50px;
     }
 
@@ -103,6 +109,8 @@
     &-order-wrapper {
       display: flex;
       align-items: center;
+
+      width: 125px;
 
       cursor: pointer;
 
@@ -134,7 +142,7 @@
     }
 
     &-count {
-      display: flex;
+      display: none;
       align-items: center;
       margin-left: auto;
     }
