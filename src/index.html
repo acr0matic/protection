@@ -9,6 +9,16 @@
   <!-- Базовые мета-теги для поисковиков -->
   <title>Защити себя и свою семью!</title>
 
+  <!-- Метатаги для ссылок в социальных сетях -->
+  <meta property="og:locale" content="ru_RU" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Cредства индивидуальной защиты" />
+  <meta property="og:description" content="Защити себя и свою семью! Интернет-магазин медицинских средств индивидуальной защиты."
+  />
+  <meta property="og:image" content="https://maski24.store/img/promo-img.jpg" />
+  <meta property="og:url" content="https://maski24.store/" />
+  <meta property="og:site_name" content="Интернет-магазин средств индивидуальной защиты" />
+
   <!-- Иконки для страницы -->
   <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
   <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
@@ -28,21 +38,24 @@
   <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
 
   <!-- Метатаги которые выводят информацию о странице в поисковой запрос -->
-  <meta name="description" content="описание не длиннее 155 символов" />
-  <meta name="keywords" content="мета-теги, шаблон, html, css, acr0matic" />
+  <meta name="description" content="Интернет-магазин средств индивидуальной защиты" />
+  <meta name="keywords" content="маски, термометры, средства защиты, гигиена, безопасность, коронавирус, антисептик, перчатки" />
 
   <!-- Контролирует поведение поисковых систем при индексации страницы -->
   <meta name="robots" content="index,follow,noodp" />
 
   <!-- Покраска адресной строки в мобильных Chrome, Firefox OS и Opera -->
-  <meta name="theme-color" content="#4285f4" />
+  <meta name="theme-color" content="#000000" />
 
   <!-- Для Windows Phone -->
-  <meta name="msapplication-navbutton-color" content="#4285f4" />
+  <meta name="msapplication-navbutton-color" content="#000000" />
 
   <!-- Для iOS Safari -->
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <!-- Яндекс.Вебмастер верификация -->
+  <meta name="yandex-verification" content="81e819cb7b0aabfa" />
 
   <!-- Стили -->
   <!-- build:css -->
@@ -55,14 +68,12 @@
   <header>
     <div class="container">
       <div class="callback-wrapper">
-        <a class="phone" href="tel:89653171030">8 965 317 10 30</a>
+        <a class="phone" href="tel:+79191078878">8 919 107 88 78</a>
         <div id="callback-button" class="callback">
           <img src="img/icons/phone.svg" alt="" class="icon-header icon-callback">
           <span class="callback-text">Обратный звонок</span>
         </div>
         <!-- /.callback -->
-
-
       </div>
       <!-- /.callback -->
 
@@ -71,10 +82,11 @@
           <div class="modal-container modal-container-no-button" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
             <button class="modal-close" aria-label="Close modal" data-micromodal-close></button>
             <h3>Перезвоните мне</h3>
-            <form id="form-callback" action="">
-              <input type="text" class="input input-text" placeholder="Имя">
-              <input type="text" class="input input-text" placeholder="Телефон">
-              <button type="button" class="button button-form">Заказать</button>
+            <form id="form-callback" action="mail.php" method="POST" enctype="multipart/form-data">
+              <input type="text" class="input input-text" placeholder="Имя" name="user_name">
+              <input type="text" class="input input-text" placeholder="Телефон" name="user_phone">
+              <button id="form-callback-accept" type="button" class="button button-form">Заказать</button>
+              <span class="error-label" data-error-label></span>
             </form>
           </div>
           <!-- /.modal__container -->
@@ -111,86 +123,10 @@
             </div>
             <!-- /.modal-cart-title -->
 
-            <div class="modal-cart-item">
-              <img class="modal-cart-item-preview" src="img/production/mask/1.jpg" alt="">
-              <h3 class="modal-cart-item-text">4х слойная серая маска</h3>
-              <div class="modal-cart-item-contol">
-                <div class="product-count">
-                  <div class="product-count-wrapper">
-                    <svg class="product-count-icon product-count-minus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink " width="13px" height="1px ">
-                      <path fill-rule="evenodd" fill="rgb(160, 160, 160)" d="M-0.000,-0.000 L13.000,-0.000 L13.000,1.000 L-0.000,1.000 L-0.000,-0.000 Z " />
-                    </svg>
-                  </div>
-                  <!-- /.production-count-wrapper -->
-                  <span class="product-count-text">3</span>
-                  <div class="product-count-wrapper">
-                    <svg class="product-count-icon product-count-plus" xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " width="13px " height="13px ">
-                      <path fill-rule="evenodd" fill="rgb(160, 160, 160)" d="M13.000,7.000 L7.000,7.000 L7.000,13.000 L6.000,13.000 L6.000,7.000 L-0.000,7.000 L-0.000,6.000 L6.000,6.000 L6.000,-0.000 L7.000,-0.000 L7.000,6.000 L13.000,6.000 L13.000,7.000 Z " />
-                    </svg>
-                  </div>
-                  <!-- /.production-count-wrapper -->
-                </div>
-                <!-- /.product-count -->
-                <span class="modal-cart-item-price">22 000р</span>
-                <button class="modal-cart-item-delete"></button>
-              </div>
-              <!-- /.modal-cart-item-contol -->
-            </div>
-            <!-- /.modal-cart-item -->
+            <div class="modal-cart-wrapper">
 
-            <div class="modal-cart-item">
-              <img class="modal-cart-item-preview" src="img/production/mask/1.jpg" alt="">
-              <h3 class="modal-cart-item-text">4х слойная серая маска</h3>
-              <div class="modal-cart-item-contol">
-                <div class="product-count">
-                  <div class="product-count-wrapper">
-                    <svg class="product-count-icon product-count-minus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink " width="13px" height="1px ">
-                      <path fill-rule="evenodd" fill="rgb(160, 160, 160)" d="M-0.000,-0.000 L13.000,-0.000 L13.000,1.000 L-0.000,1.000 L-0.000,-0.000 Z " />
-                    </svg>
-                  </div>
-                  <!-- /.production-count-wrapper -->
-                  <span class="product-count-text">3</span>
-                  <div class="product-count-wrapper">
-                    <svg class="product-count-icon product-count-plus" xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " width="13px " height="13px ">
-                      <path fill-rule="evenodd" fill="rgb(160, 160, 160)" d="M13.000,7.000 L7.000,7.000 L7.000,13.000 L6.000,13.000 L6.000,7.000 L-0.000,7.000 L-0.000,6.000 L6.000,6.000 L6.000,-0.000 L7.000,-0.000 L7.000,6.000 L13.000,6.000 L13.000,7.000 Z " />
-                    </svg>
-                  </div>
-                  <!-- /.production-count-wrapper -->
-                </div>
-                <!-- /.product-count -->
-                <span class="modal-cart-item-price">22 000р</span>
-                <button class="modal-cart-item-delete"></button>
-              </div>
-              <!-- /.modal-cart-item-contol -->
             </div>
-            <!-- /.modal-cart-item -->
-
-            <div class="modal-cart-item">
-              <img class="modal-cart-item-preview" src="img/production/mask/1.jpg" alt="">
-              <h3 class="modal-cart-item-text">4х слойная серая маска</h3>
-              <div class="modal-cart-item-contol">
-                <div class="product-count">
-                  <div class="product-count-wrapper">
-                    <svg class="product-count-icon product-count-minus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink " width="13px" height="1px ">
-                      <path fill-rule="evenodd" fill="rgb(160, 160, 160)" d="M-0.000,-0.000 L13.000,-0.000 L13.000,1.000 L-0.000,1.000 L-0.000,-0.000 Z " />
-                    </svg>
-                  </div>
-                  <!-- /.production-count-wrapper -->
-                  <span class="product-count-text">3</span>
-                  <div class="product-count-wrapper">
-                    <svg class="product-count-icon product-count-plus" xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " width="13px " height="13px ">
-                      <path fill-rule="evenodd" fill="rgb(160, 160, 160)" d="M13.000,7.000 L7.000,7.000 L7.000,13.000 L6.000,13.000 L6.000,7.000 L-0.000,7.000 L-0.000,6.000 L6.000,6.000 L6.000,-0.000 L7.000,-0.000 L7.000,6.000 L13.000,6.000 L13.000,7.000 Z " />
-                    </svg>
-                  </div>
-                  <!-- /.production-count-wrapper -->
-                </div>
-                <!-- /.product-count -->
-                <span class="modal-cart-item-price">22 000р</span>
-                <button class="modal-cart-item-delete"></button>
-              </div>
-              <!-- /.modal-cart-item-contol -->
-            </div>
-            <!-- /.modal-cart-item -->
+            <!-- /.modal-cart-wrapper -->
 
             <button id="checkout-button" class="button button-clear modal-cart-button">Перейти к оформлению</button>
           </div>
@@ -210,7 +146,7 @@
         <div class="wrapper">
           <div class="wrapper-text">
             <h1 class="title">Защити себя и свою семью!</h1>
-            <h2 class="subtitle">Интернет-магазин средств индивидуальной защиты </h2>
+            <h2 class="subtitle">Интернет-магазин средств индивидуальной защиты</h2>
             <img src="img/backgrounds/virus_1.png" alt="" class="virus-text">
           </div>
           <!-- /.wrapper-text -->
@@ -256,12 +192,12 @@
       <div class="container">
         <h2 class="title">Индивидуальная защита высокого качества!</h2>
         <div class="production-wrapper">
-          <div id="test" class="production-card">
+          <div data-product="mask" class="production-card">
             <img class="production-preview" src="img/production/mask/1.jpg" alt="">
             <span class="production-cost">999</span>
             <h3 class="production-title">Маски 3-х слойные медицинские</h3>
             <div class="production-order">
-              <div data-cart-status="" class="production-order-wrapper" ">
+              <div data-cart-status="" class="production-order-wrapper">
                 <svg class="production-order-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px">
                   <path fill-rule="evenodd" fill="rgb(220, 220, 220)" d="M22.262,14.586 C21.984,15.992 20.754,17.000 19.325,17.000 C19.306,17.000 19.287,17.000 19.267,17.000 L8.733,17.000 C8.724,17.000 8.715,17.000 8.706,17.000 C7.215,17.000 5.941,15.883 5.745,14.390 L4.228,2.871 C4.163,2.375 3.738,2.001 3.239,2.000 L0.994,2.000 C0.443,2.000 -0.004,1.553 -0.004,1.000 C-0.004,0.447 0.443,-0.000 0.994,-0.000 L3.241,-0.000 C4.739,0.003 6.014,1.125 6.208,2.610 L6.523,5.000 L22.961,5.000 C23.260,5.000 23.544,5.135 23.733,5.366 C23.923,5.598 23.999,5.902 23.940,6.196 L22.262,14.586 ZM6.786,7.000 L7.725,14.129 C7.791,14.627 8.215,15.000 8.715,15.000 C8.718,15.000 8.721,15.000 8.724,15.000 L19.286,15.000 C19.768,14.975 20.210,14.670 20.304,14.195 L21.743,7.000 L6.786,7.000 ZM7.984,18.000 C9.636,18.000 10.979,19.346 10.979,21.000 C10.979,22.654 9.636,24.000 7.984,24.000 C6.332,24.000 4.988,22.654 4.988,21.000 C4.988,19.346 6.332,18.000 7.984,18.000 ZM7.984,22.000 C8.534,22.000 8.982,21.552 8.982,21.000 C8.982,20.448 8.534,20.000 7.984,20.000 C7.433,20.000 6.985,20.448 6.985,21.000 C6.985,21.552 7.433,22.000 7.984,22.000 ZM19.966,18.000 C21.617,18.000 22.961,19.346 22.961,21.000 C22.961,22.654 21.617,24.000 19.966,24.000 C18.314,24.000 16.970,22.654 16.970,21.000 C16.970,19.346 18.314,18.000 19.966,18.000 ZM19.966,22.000 C20.516,22.000 20.964,21.552 20.964,21.000 C20.964,20.448 20.516,20.000 19.966,20.000 C19.415,20.000 18.967,20.448 18.967,21.000 C18.967,21.552 19.415,22.000 19.966,22.000 Z" />
                 </svg>
@@ -270,15 +206,15 @@
               <!-- /.production-order-wrapper -->
               <div class="production-count">
                 <div class="production-count-wrapper production-count-minus">
-                  <svg class="production-count-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink " width="13px" height="1px ">
-                    <path fill-rule="evenodd" fill="rgb(160, 160, 160)" d="M-0.000,-0.000 L13.000,-0.000 L13.000,1.000 L-0.000,1.000 L-0.000,-0.000 Z " />
+                  <svg class="production-count-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13px" height="1px">
+                    <path fill-rule="evenodd" fill="rgb(160, 160, 160)" d="M-0.000,-0.000 L13.000,-0.000 L13.000,1.000 L-0.000,1.000 L-0.000,-0.000 Z" />
                   </svg>
                 </div>
                 <!-- /.production-count-wrapper -->
                 <span class="production-count-text">1</span>
                 <div class="production-count-wrapper production-count-plus">
-                  <svg class="production-count-icon" xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " width="13px " height="13px ">
-                    <path fill-rule="evenodd" fill="rgb(160, 160, 160)" d="M13.000,7.000 L7.000,7.000 L7.000,13.000 L6.000,13.000 L6.000,7.000 L-0.000,7.000 L-0.000,6.000 L6.000,6.000 L6.000,-0.000 L7.000,-0.000 L7.000,6.000 L13.000,6.000 L13.000,7.000 Z " />
+                  <svg class="production-count-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13px" height="13px">
+                    <path fill-rule="evenodd" fill="rgb(160, 160, 160)" d="M13.000,7.000 L7.000,7.000 L7.000,13.000 L6.000,13.000 L6.000,7.000 L-0.000,7.000 L-0.000,6.000 L6.000,6.000 L6.000,-0.000 L7.000,-0.000 L7.000,6.000 L13.000,6.000 L13.000,7.000 Z" />
                   </svg>
                 </div>
                 <!-- /.production-count-wrapper -->
@@ -289,7 +225,7 @@
           </div>
           <!-- /.production-card -->
 
-          <div class="production-card">
+          <div data-product="zm" class="production-card">
             <img class="production-preview" src="img/production/zm/1.jpg" alt="">
             <span class="production-cost">3290</span>
             <h3 class="production-title">Полумаска ЗМ</h3>
@@ -303,15 +239,15 @@
               <!-- /.production-order-wrapper -->
               <div class="production-count">
                 <div class="production-count-wrapper production-count-minus">
-                  <svg class="production-count-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink " width="13px" height="1px ">
-                    <path fill-rule="evenodd" fill="rgb(160, 160, 160)" d="M-0.000,-0.000 L13.000,-0.000 L13.000,1.000 L-0.000,1.000 L-0.000,-0.000 Z " />
+                  <svg class="production-count-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13px" height="1px">
+                    <path fill-rule="evenodd" fill="rgb(160, 160, 160)" d="M-0.000,-0.000 L13.000,-0.000 L13.000,1.000 L-0.000,1.000 L-0.000,-0.000 Z" />
                   </svg>
                 </div>
                 <!-- /.production-count-wrapper -->
                 <span class="production-count-text">1</span>
                 <div class="production-count-wrapper production-count-plus">
-                  <svg class="production-count-icon" xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " width="13px " height="13px ">
-                    <path fill-rule="evenodd" fill="rgb(160, 160, 160)" d="M13.000,7.000 L7.000,7.000 L7.000,13.000 L6.000,13.000 L6.000,7.000 L-0.000,7.000 L-0.000,6.000 L6.000,6.000 L6.000,-0.000 L7.000,-0.000 L7.000,6.000 L13.000,6.000 L13.000,7.000 Z " />
+                  <svg class="production-count-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13px" height="13px">
+                    <path fill-rule="evenodd" fill="rgb(160, 160, 160)" d="M13.000,7.000 L7.000,7.000 L7.000,13.000 L6.000,13.000 L6.000,7.000 L-0.000,7.000 L-0.000,6.000 L6.000,6.000 L6.000,-0.000 L7.000,-0.000 L7.000,6.000 L13.000,6.000 L13.000,7.000 Z" />
                   </svg>
                 </div>
                 <!-- /.production-count-wrapper -->
@@ -322,7 +258,7 @@
           </div>
           <!-- /.production-card -->
 
-          <div class="production-card">
+          <div data-product="gloves" class="production-card">
             <img class="production-preview" src="img/production/gloves/1.jpg" alt="">
             <span class="production-cost">3290</span>
             <h3 class="production-title">Нитриловые перчатки</h3>
@@ -337,15 +273,15 @@
 
               <div class="production-count">
                 <div class="production-count-wrapper production-count-minus">
-                  <svg class="production-count-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink " width="13px" height="1px ">
-                    <path fill-rule="evenodd" fill="rgb(160, 160, 160)" d="M-0.000,-0.000 L13.000,-0.000 L13.000,1.000 L-0.000,1.000 L-0.000,-0.000 Z " />
+                  <svg class="production-count-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13px" height="1px">
+                    <path fill-rule="evenodd" fill="rgb(160, 160, 160)" d="M-0.000,-0.000 L13.000,-0.000 L13.000,1.000 L-0.000,1.000 L-0.000,-0.000 Z" />
                   </svg>
                 </div>
                 <!-- /.production-count-wrapper -->
                 <span class="production-count-text">1</span>
                 <div class="production-count-wrapper production-count-plus">
-                  <svg class="production-count-icon" xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " width="13px " height="13px ">
-                    <path fill-rule="evenodd" fill="rgb(160, 160, 160)" d="M13.000,7.000 L7.000,7.000 L7.000,13.000 L6.000,13.000 L6.000,7.000 L-0.000,7.000 L-0.000,6.000 L6.000,6.000 L6.000,-0.000 L7.000,-0.000 L7.000,6.000 L13.000,6.000 L13.000,7.000 Z " />
+                  <svg class="production-count-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13px" height="13px">
+                    <path fill-rule="evenodd" fill="rgb(160, 160, 160)" d="M13.000,7.000 L7.000,7.000 L7.000,13.000 L6.000,13.000 L6.000,7.000 L-0.000,7.000 L-0.000,6.000 L6.000,6.000 L6.000,-0.000 L7.000,-0.000 L7.000,6.000 L13.000,6.000 L13.000,7.000 Z" />
                   </svg>
                 </div>
                 <!-- /.production-count-wrapper -->
@@ -356,7 +292,7 @@
           </div>
           <!-- /.production-card -->
 
-          <div class="production-card">
+          <div data-product="dettol" class="production-card">
             <img class="production-preview" src="img/production/dettol/1.jpg" alt="">
             <span class="production-cost">3290</span>
             <h3 class="production-title">Антисептик Dettol</h3>
@@ -371,15 +307,15 @@
 
               <div class="production-count">
                 <div class="production-count-wrapper production-count-minus">
-                  <svg class="production-count-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink " width="13px" height="1px ">
-                    <path fill-rule="evenodd" fill="rgb(160, 160, 160)" d="M-0.000,-0.000 L13.000,-0.000 L13.000,1.000 L-0.000,1.000 L-0.000,-0.000 Z " />
+                  <svg class="production-count-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13px" height="1px">
+                    <path fill-rule="evenodd" fill="rgb(160, 160, 160)" d="M-0.000,-0.000 L13.000,-0.000 L13.000,1.000 L-0.000,1.000 L-0.000,-0.000 Z" />
                   </svg>
                 </div>
                 <!-- /.production-count-wrapper -->
                 <span class="production-count-text">1</span>
                 <div class="production-count-wrapper production-count-plus">
-                  <svg class="production-count-icon" xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " width="13px " height="13px ">
-                    <path fill-rule="evenodd" fill="rgb(160, 160, 160)" d="M13.000,7.000 L7.000,7.000 L7.000,13.000 L6.000,13.000 L6.000,7.000 L-0.000,7.000 L-0.000,6.000 L6.000,6.000 L6.000,-0.000 L7.000,-0.000 L7.000,6.000 L13.000,6.000 L13.000,7.000 Z " />
+                  <svg class="production-count-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13px" height="13px">
+                    <path fill-rule="evenodd" fill="rgb(160, 160, 160)" d="M13.000,7.000 L7.000,7.000 L7.000,13.000 L6.000,13.000 L6.000,7.000 L-0.000,7.000 L-0.000,6.000 L6.000,6.000 L6.000,-0.000 L7.000,-0.000 L7.000,6.000 L13.000,6.000 L13.000,7.000 Z" />
                   </svg>
                 </div>
                 <!-- /.production-count-wrapper -->
@@ -390,7 +326,7 @@
           </div>
           <!-- /.production-card -->
 
-          <div class="production-card">
+          <div data-product="thermometer" class="production-card">
             <img class="production-preview" src="img/production/thermometer/1.jpg" alt="">
             <span class="production-cost">3290</span>
             <h3 class="production-title">Бесконтактные термометры b-well</h3>
@@ -404,15 +340,15 @@
               <!-- /.production-order-wrapper -->
               <div class="production-count">
                 <div class="production-count-wrapper">
-                  <svg class="production-count-icon production-count-minus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink " width="13px" height="1px ">
-                    <path fill-rule="evenodd" fill="rgb(160, 160, 160)" d="M-0.000,-0.000 L13.000,-0.000 L13.000,1.000 L-0.000,1.000 L-0.000,-0.000 Z " />
+                  <svg class="production-count-icon production-count-minus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13px" height="1px">
+                    <path fill-rule="evenodd" fill="rgb(160, 160, 160)" d="M-0.000,-0.000 L13.000,-0.000 L13.000,1.000 L-0.000,1.000 L-0.000,-0.000 Z" />
                   </svg>
                 </div>
                 <!-- /.production-count-wrapper -->
                 <span class="production-count-text">1</span>
                 <div class="production-count-wrapper">
-                  <svg class="production-count-icon production-count-plus" xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " width="13px " height="13px ">
-                    <path fill-rule="evenodd" fill="rgb(160, 160, 160)" d="M13.000,7.000 L7.000,7.000 L7.000,13.000 L6.000,13.000 L6.000,7.000 L-0.000,7.000 L-0.000,6.000 L6.000,6.000 L6.000,-0.000 L7.000,-0.000 L7.000,6.000 L13.000,6.000 L13.000,7.000 Z " />
+                  <svg class="production-count-icon production-count-plus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13px" height="13px">
+                    <path fill-rule="evenodd" fill="rgb(160, 160, 160)" d="M13.000,7.000 L7.000,7.000 L7.000,13.000 L6.000,13.000 L6.000,7.000 L-0.000,7.000 L-0.000,6.000 L6.000,6.000 L6.000,-0.000 L7.000,-0.000 L7.000,6.000 L13.000,6.000 L13.000,7.000 Z" />
                   </svg>
                 </div>
                 <!-- /.production-count-wrapper -->
@@ -478,7 +414,7 @@
   <!-- Подвал -->
   <footer>
     <div class="container">
-      <span class="site-title">© 2020 Название сайта.ру</span>
+      <span class="site-title">© 2020 maski24.store</span>
     </div>
     <!-- /.container -->
   </footer>
@@ -493,15 +429,25 @@
             <div class="modal-content-column">
               <div class="product-gallery">
                 <div class="gallery-main">
-                  <img class="gallery-image gallery-main-image" src="img/production/mask/1.jpg" alt="">
+                  <a data-fslightbox href="">
+                    <img class="gallery-image gallery-main-image" src="img/production/mask/1.jpg" alt="">
+                  </a>
                 </div>
                 <!-- /.gallery-main -->
 
                 <div class="gallery-other">
-                  <img class="gallery-image gallery-image-active gallery-other-image" src="img/production/mask/1.jpg" alt="">
-                  <img class="gallery-image gallery-other-image" src="img/production/mask/2.jpg" alt="">
-                  <img class="gallery-image gallery-other-image" src="img/production/mask/3.jpg" alt="">
-                  <img class="gallery-image gallery-other-image" src="img/production/mask/1.jpg" alt="">
+                  <a class="gallery-image-wrapper" data-fslightbox href="">
+                    <img class="gallery-image gallery-other-image" src="img/production/mask/1.jpg" alt="">
+                  </a>
+                  <a class="gallery-image-wrapper" data-fslightbox href="">
+                    <img class="gallery-image gallery-other-image" src="img/production/mask/2.jpg" alt="">
+                  </a>
+                  <a class="gallery-image-wrapper" data-fslightbox href="">
+                    <img class="gallery-image gallery-other-image" src="img/production/mask/3.jpg" alt="">
+                  </a>
+                  <a class="gallery-image-wrapper" data-fslightbox href="">
+                    <img class="gallery-image gallery-other-image" src="img/production/mask/1.jpg" alt="">
+                  </a>
                 </div>
                 <!-- /.gallery-main -->
               </div>
@@ -520,15 +466,15 @@
 
                   <div class="product-count">
                     <div class="product-count-wrapper">
-                      <svg class="product-count-icon product-count-minus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink " width="13px" height="1px ">
-                        <path fill-rule="evenodd" fill="rgb(160, 160, 160)" d="M-0.000,-0.000 L13.000,-0.000 L13.000,1.000 L-0.000,1.000 L-0.000,-0.000 Z " />
+                      <svg class="product-count-icon product-count-minus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13px" height="1px">
+                        <path fill-rule="evenodd" fill="rgb(160, 160, 160)" d="M-0.000,-0.000 L13.000,-0.000 L13.000,1.000 L-0.000,1.000 L-0.000,-0.000 Z" />
                       </svg>
                     </div>
                     <!-- /.production-count-wrapper -->
                     <span class="product-count-text">3</span>
                     <div class="product-count-wrapper">
-                      <svg class="product-count-icon product-count-plus" xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " width="13px " height="13px ">
-                        <path fill-rule="evenodd" fill="rgb(160, 160, 160)" d="M13.000,7.000 L7.000,7.000 L7.000,13.000 L6.000,13.000 L6.000,7.000 L-0.000,7.000 L-0.000,6.000 L6.000,6.000 L6.000,-0.000 L7.000,-0.000 L7.000,6.000 L13.000,6.000 L13.000,7.000 Z " />
+                      <svg class="product-count-icon product-count-plus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13px" height="13px">
+                        <path fill-rule="evenodd" fill="rgb(160, 160, 160)" d="M13.000,7.000 L7.000,7.000 L7.000,13.000 L6.000,13.000 L6.000,7.000 L-0.000,7.000 L-0.000,6.000 L6.000,6.000 L6.000,-0.000 L7.000,-0.000 L7.000,6.000 L13.000,6.000 L13.000,7.000 Z" />
                       </svg>
                     </div>
                     <!-- /.production-count-wrapper -->
@@ -536,10 +482,9 @@
                   <!-- /.product-count -->
                 </div>
                 <!-- /.product-order -->
-                <div class="product-order-button">
-                  <button class="button button-primary">Купить</button>
-                  <button class="button button-secondary">Убрать</button>
-                </div>
+                <h3 class="product-title">Описание</h3>
+                <p class="product-description">Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты. Даль рукописи текста живет первую правилами за эта заманивший рот речью вскоре встретил рыбными собрал бросил, строчка повстречался но над прямо своих?
+                  Диких рукопись снова переулка, знаках дороге всеми жаренные!</p>
                 <!-- /.product-order-button -->
               </div>
               <!-- /.product-order -->
@@ -549,7 +494,7 @@
           <!-- /.modal-content-row -->
 
           <div class="modal-content-row">
-            <div class="modal-content-column">
+            <!-- <div class="modal-content-column">
               <h3 class="product-title">Характеристики</h3>
               <table class="product-feature-table">
                 <tr class="table-row">
@@ -601,15 +546,12 @@
                   </td>
                 </tr>
               </table>
-            </div>
+            </div> -->
             <!-- /.modal-content-column -->
             <div class="modal-content-column">
-              <h3 class="product-title">Описание</h3>
-              <p class="product-description">
-                Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Проектах буквенных взобравшись диких lorem имеет дороге оксмокс путь маленькая.
-              </p>
+              <!-- <h3 class="product-title">Описание</h3>
               <p class="product-description">Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты. Даль рукописи текста живет первую правилами за эта заманивший рот речью вскоре встретил рыбными собрал бросил, строчка повстречался но над прямо своих?
-                Диких рукопись снова переулка, знаках дороге всеми жаренные!</p>
+                Диких рукопись снова переулка, знаках дороге всеми жаренные!</p> -->
             </div>
             <!-- /.modal-content-column -->
           </div>
@@ -629,115 +571,42 @@
         <button id="close-cart" class="modal-close" aria-label="Close modal" data-micromodal-close></button>
         <h2 class="modal-cart-title">Корзина</h2>
         <!-- /.modal-cart-title -->
-        <div class="modal-cart-item">
-          <img class="modal-cart-item-preview" src="img/production/mask/1.jpg" alt="">
-          <h3 class="modal-cart-item-text">4х слойная серая маска</h3>
-          <div class="modal-cart-item-contol">
-            <div class="product-count">
-              <div class="product-count-wrapper">
-                <svg class="product-count-icon product-count-minus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink " width="13px" height="1px ">
-                  <path fill-rule="evenodd" fill="rgb(160, 160, 160)" d="M-0.000,-0.000 L13.000,-0.000 L13.000,1.000 L-0.000,1.000 L-0.000,-0.000 Z " />
-                  </svg>
-              </div>
-              <!-- /.production-count-wrapper -->
-              <span class="product-count-text">3</span>
-              <div class="product-count-wrapper">
-                <svg class="product-count-icon product-count-plus" xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " width="13px " height="13px ">
-                  <path fill-rule="evenodd" fill="rgb(160, 160, 160)" d="M13.000,7.000 L7.000,7.000 L7.000,13.000 L6.000,13.000 L6.000,7.000 L-0.000,7.000 L-0.000,6.000 L6.000,6.000 L6.000,-0.000 L7.000,-0.000 L7.000,6.000 L13.000,6.000 L13.000,7.000 Z " />
-                  </svg>
-              </div>
-              <!-- /.production-count-wrapper -->
-            </div>
-            <!-- /.product-count -->
-            <span class="modal-cart-item-price">22 000р</span>
-            <button class="modal-cart-item-delete"></button>
-          </div>
-          <!-- /.modal-cart-item-contol -->
-        </div>
+        <div class="modal-cart-wrapper">
 
-        <!-- /.modal-cart-item -->
-        <div class="modal-cart-item">
-          <img class="modal-cart-item-preview" src="img/production/mask/1.jpg" alt="">
-          <h3 class="modal-cart-item-text">4х слойная серая маска</h3>
-          <div class="modal-cart-item-contol">
-            <div class="product-count">
-              <div class="product-count-wrapper">
-                <svg class="product-count-icon product-count-minus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink " width="13px" height="1px ">
-                  <path fill-rule="evenodd" fill="rgb(160, 160, 160)" d="M-0.000,-0.000 L13.000,-0.000 L13.000,1.000 L-0.000,1.000 L-0.000,-0.000 Z " />
-                   </svg>
-              </div>
-              <!-- /.production-count-wrapper -->
-              <span class="product-count-text">3</span>
-              <div class="product-count-wrapper">
-                <svg class="product-count-icon product-count-plus" xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " width="13px " height="13px ">
-                  <path fill-rule="evenodd" fill="rgb(160, 160, 160)" d="M13.000,7.000 L7.000,7.000 L7.000,13.000 L6.000,13.000 L6.000,7.000 L-0.000,7.000 L-0.000,6.000 L6.000,6.000 L6.000,-0.000 L7.000,-0.000 L7.000,6.000 L13.000,6.000 L13.000,7.000 Z " />
-                  </svg>
-              </div>
-              <!-- /.production-count-wrapper -->
-            </div>
-            <!-- /.product-count -->
-            <span class="modal-cart-item-price">22 000р</span>
-            <button class="modal-cart-item-delete"></button>
-          </div>
-          <!-- /.modal-cart-item-contol -->
         </div>
-        <!-- /.modal-cart-item -->
-
-        <div class="modal-cart-item">
-          <img class="modal-cart-item-preview" src="img/production/mask/1.jpg" alt="">
-          <h3 class="modal-cart-item-text">4х слойная серая маска</h3>
-          <div class="modal-cart-item-contol">
-            <div class="product-count">
-              <div class="product-count-wrapper">
-                <svg class="product-count-icon product-count-minus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink " width="13px" height="1px ">
-                  <path fill-rule="evenodd" fill="rgb(160, 160, 160)" d="M-0.000,-0.000 L13.000,-0.000 L13.000,1.000 L-0.000,1.000 L-0.000,-0.000 Z " />
-                  </svg>
-              </div>
-              <!-- /.production-count-wrapper -->
-              <span class="product-count-text">3</span>
-              <div class="product-count-wrapper">
-                <svg class="product-count-icon product-count-plus" xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " width="13px " height="13px ">
-                  <path fill-rule="evenodd" fill="rgb(160, 160, 160)" d="M13.000,7.000 L7.000,7.000 L7.000,13.000 L6.000,13.000 L6.000,7.000 L-0.000,7.000 L-0.000,6.000 L6.000,6.000 L6.000,-0.000 L7.000,-0.000 L7.000,6.000 L13.000,6.000 L13.000,7.000 Z " />
-                  </svg>
-              </div>
-              <!-- /.production-count-wrapper -->
-            </div>
-            <!-- /.product-count -->
-            <span class="modal-cart-item-price">22 000р</span>
-            <button class="modal-cart-item-delete"></button>
-          </div>
-          <!-- /.modal-cart-item-contol -->
-        </div>
-        <!-- /.modal-cart-item -->
+        <!-- /.modal-cart-wrapper -->
 
         <table class="table-cart-total">
           <tr class="table-row">
-            <td class="table-column">Итого</td>
-            <td class="table-column table-column-padding table-cart-price table-cart-price-main">24 490р</td>
+            <td class="table-column">Итого:</td>
+            <td id="totalPrice" class="table-column table-column-padding table-cart-price table-cart-price-main">24 490р</td>
           </tr>
-          <tr class="table-row table-cart-extra">
-            <td class="table-column">Доставка курьером</td>
-            <td class="table-column table-column-padding table-cart-price">+500р</td>
-          </tr>
+          <!-- <tr class="table-row table-cart-extra">
+            <td class="table-column">Доставка курьером:</td>
+            <td id="deliveryPrice" class="table-column table-column-padding table-cart-price">+500р</td>
+          </tr> -->
         </table>
 
         <h2 class="modal-cart-title">Оформление заказа</h2>
         <form id="modal-order-form" action="">
           <label class="input-wrapper">
             <span class="input-placeholder">Имя*</span>
-            <input required class="input input-text" type="text" placeholder="Андрей">
+            <input required class="input input-text" type="text" placeholder="Андрей" name="user_name">
           </label>
           <label class="input-wrapper">
             <span class="input-placeholder">Телефон*</span>
-            <input required class="input input-text" type="tel" placeholder="+ 7 915 924 77 13">
+            <input required class="input input-text" type="tel" placeholder="+ 7 (900) 000-11-11" name="user_phone">
           </label>
           <label class="input-wrapper">
             <span class="input-placeholder">Коментарий</span>
-            <input class="input input-text" type="text" placeholder="Просьба оформить доставку с 18 до 21">
+            <input class="input input-text" type="text" placeholder="Просьба оформить доставку с 18 до 21" name="user_comment">
           </label>
-          <button class="button button-form">Оформить</button>
+          <div class="modal-cart-action">
+            <button type="button" id="order-form-button" class="button button-form">Оформить</button>
+            <span data-error-label class="error-label"></span>
+          </div>
+          <!-- /.order-action -->
         </form>
-
       </div>
       <!-- /.modal__container -->
     </div>
@@ -766,12 +635,34 @@
   <!-- Скрипты -->
   <!-- build:js -->
   <script src="scripts/libraries/micromodal.js"></script>
-  <script src="scripts/script.js "></script>
+  <script src="scripts/libraries/fslightbox.js"></script>
+  <script src="scripts/script.js"></script>
+  <script src="scripts/form.js"></script>
   <!-- endbuild -->
 
   <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function(m, e, t, r, i, k, a) {
+      m[i] = m[i] || function() {
+        (m[i].a = m[i].a || []).push(arguments)
+      };
+      m[i].l = 1 * new Date();
+      k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(61920346, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+      webvisor: true
+    });
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/61920346" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
   <!-- /Yandex.Metrika counter -->
+
   <!-- Google Analytics -->
+
   <!-- /Google Analytics -->
 </body>
 

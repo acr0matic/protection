@@ -19,6 +19,7 @@
 }
 
 .table-cart-total {
+
   .table-row {
     text-align: right;
     padding: 15px;
@@ -34,8 +35,19 @@
   }
 
   @include breakpoint($phone-l) {
+    width: 100%;
     .table-row {
       text-align: left;
+      width: 100%;
+    }
+
+    .table-row,
+    .table-column {
+      padding: 10px 10px 10px 0;
+    }
+
+    .table-column {
+      text-align: right;
     }
 
     .table-cart-price-main {

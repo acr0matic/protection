@@ -21,6 +21,12 @@ header {
   .cart-cost {
     color: $font-color-secondary;
   }
+
+  .callback-text {
+    @include breakpoint($phone-l) {
+      font-size: $font-size-5 - 2;
+    }
+  }
 }
 
 #hero {

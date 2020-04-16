@@ -49,8 +49,28 @@
     }
   }
 
+  &-cart-action {
+    display: flex;
+    align-items: center;
+
+    @include breakpoint($phone-l) {
+      flex-direction: column;
+    }
+  }
+
   &-cart-empty {
     width: 280px;
+
+    .modal-close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+
+    @include breakpoint($phone-l) {
+      border-radius: 15px;
+      box-shadow: 0 0 50px 0 rgba(165, 165, 165, 0.24);
+    }
   }
 
   &-cart-filled {
@@ -64,6 +84,8 @@
 
     @include breakpoint($phone-l) {
       width: 95%;
+      border-radius: 15px;
+      box-shadow: 0 0 50px 0 rgba(165, 165, 165, 0.24);
     }
   }
 
@@ -79,7 +101,7 @@
   &-cart-item {
     display: flex;
     align-items: center;
-
+    justify-content: space-between;
     padding: 15px 0;
 
     text-align: left;
@@ -90,6 +112,8 @@
 
     @include breakpoint($phone-l) {
       flex-wrap: wrap;
+      flex-direction: column;
+      align-items: flex-start;
     }
   }
 
@@ -148,6 +172,10 @@
 
   &-cart-item-price {
     margin-left: 15px;
+
+    &::after {
+      content: "р";
+    }
   }
 
   &-cart-item-delete {
@@ -198,6 +226,14 @@
 
     &::-webkit-scrollbar {
       display: none;
+
+      @include breakpoint($phone-l) {
+        display: block;
+      }
+    }
+
+    @include breakpoint($phone-l) {
+      max-height: 82vh;
     }
   }
 
@@ -206,6 +242,8 @@
 
     @include breakpoint($phone-l) {
       padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 50px 0 rgba(165, 165, 165, 0.24);
     }
   }
 
@@ -223,7 +261,6 @@
     @include breakpoint($phone-l) {
       width: 90%;
     }
-
   }
 
   &-accept-wrapper {
@@ -298,11 +335,21 @@
       width: 440px;
       max-width: 100%;
       margin-left: 20px;
+
+      @include breakpoint($phone-l) {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+      }
     }
 
     &-cart-item-contol {
       width: 310px;
       margin-left: auto;
+
+      @include breakpoint($phone-l) {
+        width: 100%;
+      }
     }
 
     &-cart-item-price {
@@ -319,8 +366,7 @@
     margin: 40px 0 40px auto;
 
     @include breakpoint($phone-l) {
-      margin: 40px auto 40px auto;
-
+      margin: 40px 0 40px 0;
     }
   }
 }

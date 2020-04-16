@@ -48,4 +48,25 @@
       margin-left: 0;
     }
   }
+
+  .error-label {
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 50px;
+    display: block;
+
+    @include breakpoint($phone-l) {
+      margin-top: 30px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+}
+
+.error-label {
+  display: none;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #f54c4c;
 }
